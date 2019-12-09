@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+.accounts {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 5rem; }
+  .accounts div {
+    padding-right: 3rem;
+    color: #737373;
+    font-family: "Open Sans", sans-serif; }
+  .accounts div:hover {
+    border: 1px solid #FAD648; }
+
+/*# sourceMappingURL=HomeHeader.css.map */

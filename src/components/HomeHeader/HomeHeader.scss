@@ -1,0 +1,17 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+
+.accounts {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem 5rem;
+  div{
+    padding-right: 3rem;
+    color: $greyColor;
+    font-family: $font-base;
+  }
+  div:hover {
+    border: 1px solid $bgdColor;
+  }
+
+}
