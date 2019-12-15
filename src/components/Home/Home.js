@@ -13,7 +13,7 @@ import HomeFooter from "../HomeFooter/HomeFooter";
 class Home extends Component{
     render(){
         return(
-            <>
+            <section className= "home">
                 <HomeHeader/>
                 <HomeThreeColumns/>
                 <HomeFourSteps/>
@@ -21,8 +21,8 @@ class Home extends Component{
                 <HomeHelp/>
                 <HomeContact/>
                 <HomeFooter/>
-            </>
-        )
+            </section>
+        );
     }
 }
 

@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+section.three_cols {
+  width: 100%;
+  background-color: #FAD648;
+  display: flex;
+  justify-content: space-around; }
+  section.three_cols div {
+    padding: 4rem;
+    width: 20%; }
+    section.three_cols div h1 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 4rem;
+      padding: 1rem; }
+    section.three_cols div h3 {
+      font-family: "Open Sans", sans-serif;
+      padding: 1rem; }
+    section.three_cols div p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.8rem; }
+
+/*# sourceMappingURL=HomeThreeColumns.css.map */

@@ -1,0 +1,41 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+
+section.home_about_us{
+  display: flex;
+  background-color: #fcfcfc;
+  width: 100%;
+  div.about_us_text{
+    width: 50%;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    div.position {
+      width: 60%;
+      padding-left: 8rem;
+      h1 {
+        font-family: $font-base;
+        font-size: 2rem;
+      }
+      img.deco {
+        padding-top: 2rem;
+      }
+      img.signature{
+        padding-left: 15rem;
+      }
+      p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        font-family: $font-base;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  div.picture_div{
+    width: 50%;
+    background-image: url("../../assets/assets/People.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}

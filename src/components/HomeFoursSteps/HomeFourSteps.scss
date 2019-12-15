@@ -1,0 +1,54 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+section.home_four_step {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  h1{
+    font-family: $font-base;
+    font-size: 2rem;
+    color: grey;
+  }
+  img{
+    padding: 2rem;
+  }
+  button{
+    width: 15%;
+    margin: 4rem;
+    padding: 0.4rem;
+    background-color: white;
+    color: gray;
+    font-size: 2.2rem;
+    border: 0.05rem solid gray;
+    font-family: $font-base;
+  }
+  div.background {
+    color: $darkColor;
+    background-color: #f5f5f5;
+    padding-left: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    div.four-cols {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      div.column {
+        width: 10%;
+        h2 {
+          font-family: $font-base;
+        }
+        div{
+          border: 0.5px solid $darkColor;
+          width: 3rem;
+          margin-left: 3rem;
+          margin-top: 1rem;
+        }
+        p{
+          padding-top: 1rem;
+          font-family: $font-base;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

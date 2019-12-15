@@ -1,0 +1,25 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+section.three_cols{
+  width: 100%;
+  background-color: $bgdColor;
+  display: flex;
+  justify-content: space-around;
+  div{
+    padding: 4rem;
+    width: 20%;
+    h1{
+      font-family: $font-base;
+      font-size: 4rem;
+      padding: 1rem;
+    }
+    h3{
+      font-family: $font-base;
+      padding: 1rem;
+    }
+    p{
+      font-family: $font-base;
+      font-size: 0.8rem;
+    }
+  }
+}

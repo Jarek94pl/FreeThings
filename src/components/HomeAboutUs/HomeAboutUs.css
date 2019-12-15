@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+section.home_about_us {
+  display: flex;
+  background-color: #fcfcfc;
+  width: 100%; }
+  section.home_about_us div.about_us_text {
+    width: 50%;
+    padding-top: 6rem;
+    padding-bottom: 5rem; }
+    section.home_about_us div.about_us_text div.position {
+      width: 60%;
+      padding-left: 8rem; }
+      section.home_about_us div.about_us_text div.position h1 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 2rem; }
+      section.home_about_us div.about_us_text div.position img.deco {
+        padding-top: 2rem; }
+      section.home_about_us div.about_us_text div.position img.signature {
+        padding-left: 15rem; }
+      section.home_about_us div.about_us_text div.position p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5rem; }
+  section.home_about_us div.picture_div {
+    width: 50%;
+    background-image: url("../../assets/assets/People.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; }
+
+/*# sourceMappingURL=HomeAboutUs.css.map */
