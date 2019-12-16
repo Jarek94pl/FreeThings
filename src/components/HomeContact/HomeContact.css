@@ -5,7 +5,7 @@ section.home_contact {
   justify-content: flex-end;
   width: 100%;
   background-position: left;
-  background-image: url("../../assets/assets/Background-Contact-Form.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url("../../assets/assets/Background-Contact-Form.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100vh; }
@@ -40,11 +40,15 @@ section.home_contact {
         color: black;
         font-size: 0.6rem;
         padding-right: 11rem; }
+      section.home_contact div.contact div.text_area textarea {
+        border: none;
+        border-bottom: 1px solid grey; }
 
 footer P {
   display: flex;
   justify-content: center;
-  padding-left: 38rem; }
+  padding-left: 38rem;
+  font-family: "Open Sans", sans-serif; }
   footer P i.face {
     margin-left: 35rem; }
   footer P i.insta {

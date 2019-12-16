@@ -27,7 +27,7 @@ class HomeContact extends Component{
                     </form>
                     <div className="text_area">
                         <label>Wpisz swoją wiadomość</label>
-                        <textarea  cols="43"    placeholder=" Pellentesque consectetur, urna quis egestas aliquet, tortor eros pharetra justo,
+                        <textarea cols="43" placeholder="Pellentesque consectetur, urna quis egestas aliquet, tortor eros pharetra justo,
                                 eu pulvinar quam nunc sed leo. Fusce in gravida nulla, eget eleifend turpis"> </textarea>
                     </div>
                     <button type="submit">Wyślij</button>
