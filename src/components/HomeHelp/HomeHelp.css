@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+div.home_help div.three_boxes {
+  display: flex;
+  justify-content: space-evenly; }
+  div.home_help div.three_boxes div {
+    padding: 2rem;
+    margin: 3rem;
+    border: 1px solid black;
+    font-family: "Open Sans", sans-serif; }
+div.home_help p {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+div.home_help ul#page-numbers {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 1rem; }
+  div.home_help ul#page-numbers li {
+    margin-right: 0.3em;
+    color: blue;
+    user-select: none;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif; }
 
 /*# sourceMappingURL=HomeHelp.css.map */

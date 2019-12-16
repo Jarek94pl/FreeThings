@@ -1,16 +1,188 @@
 import React, {Component} from "react";
 import "./HomeHelp.scss";
+import deco from '../../assets/assets/Decoration.svg'; // with import
+import {NavLink} from "react-router-dom";
 
 
-class HomeHelp extends Component{
+class FoundationOne extends Component{
     render(){
         return(
-            <section className="home_help">
-
-                <h3>pomoc</h3>
-            </section>
+            <div className="foundation">
+                <div className="foundation__name">
+                    <h3>Fundacja "Dbam o zdrowie"</h3>
+                    <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
+                </div>
+                <div className="needs">
+                    <p>ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
+                </div>
+            </div>
         )
     }
 }
+
+class FoundationTwo extends Component{
+    render(){
+        return(
+            <div className="foundation">
+                <div className="foundation__name">
+                    <h3>Fundacja "Dla dzieci"</h3>
+                    <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
+                </div>
+                <div className="needs">
+                    <p>ubrania, meble, zabawki</p>
+                </div>
+            </div>
+        )
+    }
+}
+
+class FoundationThree extends Component{
+    render(){
+        return(
+            <div className="foundation">
+                <div className="foundation__name">
+                    <h3>Fundacja "Bez domu"</h3>
+                    <p>Cel i misja: Pomoc dla osób nieposiadających miejsca zamieszkania.</p>
+                </div>
+                <div className="needs">
+                    <p>ubrania, jedzenie, ciepłe koce</p>
+                </div>
+            </div>
+        )
+    }
+}
+
+class FoundationFour extends Component{
+    render(){
+        return(
+            <div className="foundation">
+                <div className="foundation__name">
+                    <h3>Fundacja "Dla dzieci"</h3>
+                    <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
+                </div>
+                <div className="needs">
+                    <p>ubrania, meble, zabawki</p>
+                </div>
+            </div>
+        )
+    }
+}
+
+class FoundationFive extends Component{
+    render(){
+        return(
+            <div className="foundation">
+                <div className="foundation__name">
+                    <h3>Fundacja "Dla dzieci"</h3>
+                    <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
+                </div>
+                <div className="needs">
+                    <p>ubrania, meble, zabawki</p>
+                </div>
+            </div>
+        )
+    }
+}
+
+class FoundationSix extends Component{
+    render(){
+        return(
+            <div className="foundation">
+                <div className="foundation__name">
+                    <h3>Fundacja "Dla dzieci"</h3>
+                    <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
+                </div>
+                <div className="needs">
+                    <p>ubrania, meble, zabawki</p>
+                </div>
+            </div>
+        )
+    }
+}
+
+class FoundationSeven extends Component{
+    render(){
+        return(
+            <div className="foundation">
+                <div className="foundation__name">
+                    <h3>Fundacja "Dla dzieci"</h3>
+                    <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
+                </div>
+                <div className="needs">
+                    <p>ubrania, meble, zabawki</p>
+                </div>
+            </div>
+        )
+    }
+}
+class HomeHelp extends Component {
+    constructor() {
+        super();
+        this.state = {
+            todos: [<FoundationOne/>,<FoundationTwo/>,<FoundationThree/>,<FoundationFour/>,<FoundationFive/>,<FoundationSix/>, <FoundationSeven/>],
+            currentPage: 1,
+            todosPerPage: 3
+        };
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(event) {
+        this.setState({
+            currentPage: Number(event.target.id)
+        });
+    }
+
+    render() {
+        const { todos, currentPage, todosPerPage } = this.state;
+
+        // Logic for displaying todos
+        const indexOfLastTodo = currentPage * todosPerPage;
+        const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
+        const currentTodos = todos.slice(indexOfFirstTodo, indexOfLastTodo);
+
+        const renderTodos = currentTodos.map((todo, index) => {
+            return <li key={index}>{todo}</li>;
+        });
+
+        // Logic for displaying page numbers
+        const pageNumbers = [];
+        for (let i = 1; i <= Math.ceil(todos.length / todosPerPage); i++) {
+            pageNumbers.push(i);
+        }
+
+        const renderPageNumbers = pageNumbers.map(number => {
+            return (
+                <li
+                    key={number}
+                    id={number}
+                    onClick={this.handleClick}
+                >
+                    {number}
+                </li>
+            );
+        });
+
+        return (
+            <div className="home_help">
+                <h1>Komu pomagamy?</h1>
+                <img src={deco} alt=""/>
+                <div className="three_boxes">
+                    <NavLink to={"/fundacje"}> <div>Fundacjom</div></NavLink>
+                    <NavLink to={"/organizacje"}> <div>Organizacjom pozarządowym</div> </NavLink>
+                    <NavLink to={"/zbiorki"}> <div>Lokalnym zbiórkom</div> </NavLink>
+                </div>
+                <p>W naszej bazie znajdziesz listę zweryfikowanych fundacji, z którymi współpracujemy.
+                    Możesz sprawdzić, czym się zajmują, komu pomagają i czego potrzebują.</p>
+                <ul>
+                    {renderTodos}
+                </ul>
+                <ul id="page-numbers">
+                    {renderPageNumbers}
+                </ul>
+            </div>
+        );
+    }
+}
+
 
 export default HomeHelp;
