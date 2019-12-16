@@ -1,0 +1,65 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+
+section.home_contact{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-position: left;
+  background-image: url("../../assets/assets/Background-Contact-Form.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  div.contact{
+    padding:  0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form{
+      padding-top: 2rem;
+      margin-right: 6rem;
+      display: flex;
+      width: 30%;
+      div{
+        margin-right: 1rem;
+        label{
+          padding-right: 2rem;
+          font-family: $font-alt;
+          color: black;
+          font-size: 0.6rem;
+        }
+        input{
+          padding-top: 1rem;
+          border: none;
+          border-bottom: 2px solid grey;
+
+        }
+      }
+    }
+    div.text_area{
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+      padding-left: 2rem;
+      label{
+        font-family: $font-alt;
+        color: black;
+        font-size: 0.6rem;
+        padding-right: 11rem;
+      }
+    }
+  }
+}
+footer{
+  P{
+    display: flex;
+    justify-content: center;
+    padding-left: 38rem;
+    i.face{
+      margin-left: 35rem;
+    }
+    i.insta{
+      padding-left: 2rem;
+    }
+  }
+}
