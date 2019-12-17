@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
 div.home_help div.three_boxes {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   div.home_help div.three_boxes div {
     width: 10%;
     padding: 2rem;
@@ -13,7 +14,7 @@ div.home_help p {
   font-family: "Merriweather", serif;
   font-size: 1.3rem;
   padding-top: 1rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 2rem; }
 div.home_help ul#page-numbers {
   list-style: none;
   display: flex;
@@ -31,15 +32,20 @@ div.home_help ul#page-numbers {
 
 div.foundation {
   display: flex;
+  width: 70%;
+  padding-left: 15rem;
   justify-content: center; }
   div.foundation div.foundation__name {
     width: 70%;
     float: left; }
     div.foundation div.foundation__name h3 {
+      display: flex;
+      justify-content: flex-start;
       font-family: "Merriweather", serif;
       font-size: 1.5rem;
       color: #3C3C3C; }
     div.foundation div.foundation__name p {
+      display: flex;
       font-size: 0.8rem;
       font-family: "Merriweather", serif;
       color: #3C3C3C; }
@@ -47,6 +53,8 @@ div.foundation {
     width: 50%;
     float: right; }
     div.foundation div.needs p {
+      display: flex;
+      justify-content: flex-end;
       font-size: 1rem;
       font-family: "Merriweather", serif;
       color: #3C3C3C; }

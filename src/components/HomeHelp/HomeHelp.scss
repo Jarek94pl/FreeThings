@@ -5,6 +5,7 @@ div.home_help {
   div.three_boxes{
     display: flex;
     justify-content: center;
+    align-items: center;
     div{
       width: 10%;
       padding: 2rem;
@@ -17,7 +18,7 @@ div.home_help {
     font-family: $font-alt;
     font-size: 1.3rem;
     padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
   ul#page-numbers {
     list-style: none;
@@ -36,22 +37,23 @@ div.home_help {
     }
   }
 }
-
-
-
-
 div.foundation{
   display: flex;
+  width: 70%;
+  padding-left: 15rem;
   justify-content: center;
   div.foundation__name{
     width: 70%;
     float: left;
     h3{
+      display: flex;
+      justify-content: flex-start;
       font-family: $font-alt;
       font-size: 1.5rem;
       color: $darkColor;
     }
     p{
+      display: flex;
       font-size: 0.8rem;
       font-family: $font-alt;
       color: $darkColor;
@@ -61,6 +63,8 @@ div.foundation{
     width: 50%;
     float: right;
     p{
+      display: flex;
+      justify-content: flex-end;
       font-size: 1rem;
       font-family: $font-alt;
       color: $darkColor;
