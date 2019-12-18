@@ -7,10 +7,10 @@ section.home_about_us{
   width: 100%;
   div.about_us_text{
     width: 50%;
-    padding-top: 6rem;
-    padding-bottom: 5rem;
+    //padding-top: 3rem;
+    padding-bottom: 3rem;
     div.position {
-      width: 60%;
+      width: 70%;
       padding-left: 8rem;
       h1 {
         font-family: $font-base;
@@ -36,6 +36,6 @@ section.home_about_us{
     width: 50%;
     background-image: url("../../assets/assets/People.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
   }
 }
