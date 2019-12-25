@@ -7,7 +7,7 @@
 
 
 
-Here is look for a main page:
+Main page look:
 
 ![obraz](https://user-images.githubusercontent.com/56019032/71424071-924db880-268e-11ea-99ed-b7fd2f33d253.png)
 
