@@ -67,5 +67,8 @@ header {
       font-size: 2.2rem;
       border: 0.05rem solid #3C3C3C;
       font-family: "Open Sans", sans-serif; }
+      header div.action_divs button a {
+        color: #3C3C3C;
+        text-decoration: none; }
 
 /*# sourceMappingURL=HomeHeader.css.map */

@@ -94,7 +94,7 @@ class FoundationFive extends Component{
                         <p>ubrania, meble, zabawki</p>
                     </div>
                 </div>
-                <div className="line"></div>
+                <div className="line"> </div>
             </>
         )
     }
@@ -171,7 +171,7 @@ class HomeHelp extends Component {
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(todos.length / todosPerPage); i++) {
             pageNumbers.push(i);
-        }
+        };
 
         const renderPageNumbers = pageNumbers.map(number => {
             return (

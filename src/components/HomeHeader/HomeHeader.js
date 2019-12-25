@@ -58,8 +58,8 @@ class HomeHeader extends Component{
                     </div>
 
                     <div className="action_divs">
-                        <button>ODDAJ RZECZY</button>
-                        <button>ZORGANIZUJ ZBIÓRKĘ</button>
+                        <button><NavLink to={"/logowanie"}>ODDAJ RZECZY</NavLink></button>
+                        <button><NavLink to={"/logowanie"}>ZORGANIZUJ ZBIÓRKĘ</NavLink></button>
                     </div>
                 </div>
             </header>
