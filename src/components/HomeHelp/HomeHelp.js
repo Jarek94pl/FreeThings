@@ -191,7 +191,7 @@ class HomeHelp extends Component {
                 <h1>Komu pomagamy?</h1>
                 <img src={deco} alt=""/>
                 <div className="three_boxes">
-                   <div>Fundacjom</div>
+                    <div>Fundacjom</div>
                     <div>Organizacjom pozarządowym</div>
                     <div>Lokalnym zbiórkom</div>
                 </div>

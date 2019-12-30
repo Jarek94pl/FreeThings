@@ -8,6 +8,8 @@ section.home_contact {
   background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url("../../assets/assets/Background-Contact-Form.jpg");
   background-repeat: no-repeat;
   background-size: 100%; }
+  section.home_contact button {
+    margin-left: 22rem; }
   section.home_contact div.contact {
     padding: 0 2rem;
     display: flex;

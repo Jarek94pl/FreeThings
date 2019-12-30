@@ -23,31 +23,31 @@ class HomeHeader extends Component{
                                to="home"
                                spy={true}
                                smooth={true}
-                               duration={500}>Start
+                               duration={800}>Start
                     </Link></li>
                     <li><Link  activeClass="active"
                                to="home_four_step"
                                spy={true}
                                smooth={true}
-                               duration={500}>O co chodzi?
+                               duration={800}>O co chodzi?
                     </Link></li>
                     <li><Link  activeClass="active"
                                to="home_about_us"
                                spy={true}
                                smooth={true}
-                               duration={500}>O nas
+                               duration={800}>O nas
                     </Link></li>
                     <li><Link  activeClass="active"
                                to="home_help"
                                spy={true}
                                smooth={true}
-                               duration={500}>Fundacja i organizacje
+                               duration={800}>Fundacja i organizacje
                     </Link></li>
                     <li><Link  activeClass="active"
                                to="home_contact"
                                spy={true}
                                smooth={true}
-                               duration={500}>Kontakt
+                               duration={800}>Kontakt
                     </Link></li>
                 </ul>
                 <div className="action">
