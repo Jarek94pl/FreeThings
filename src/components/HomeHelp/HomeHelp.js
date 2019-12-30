@@ -191,9 +191,9 @@ class HomeHelp extends Component {
                 <h1>Komu pomagamy?</h1>
                 <img src={deco} alt=""/>
                 <div className="three_boxes">
-                    <div>Fundacjom</div>
-                    <div>Organizacjom pozarządowym</div>
-                    <div>Lokalnym zbiórkom</div>
+                    <div onClick={this.changeColor.bind(this)}>Fundacjom</div>
+                    <div onClick={this.changeColor.bind(this)}>Organizacjom pozarządowym</div>
+                    <div onClick={this.changeColor.bind(this)}>Lokalnym zbiórkom</div>
                 </div>
                 <p>W naszej bazie znajdziesz listę zweryfikowanych fundacji, z <br/> którymi współpracujemy.
                     Możesz sprawdzić, czym się zajmują, <br/>   komu pomagają i czego potrzebują.</p>
