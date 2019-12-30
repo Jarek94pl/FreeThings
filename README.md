@@ -1,13 +1,13 @@
-# `Oddam w dobre ręce`
+# Oddam w dobre ręce
 
 
-### I used to technologies such as
+### I used technologies such as:
 ### - [x] React with Routing anf Links
 ### - [x] Sass
 
 
 
-### `Main page look:`
+### Main page look:
 
 ![obraz](https://user-images.githubusercontent.com/56019032/71424071-924db880-268e-11ea-99ed-b7fd2f33d253.png)
 
