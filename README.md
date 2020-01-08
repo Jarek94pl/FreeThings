@@ -14,7 +14,7 @@
 ![obraz](https://user-images.githubusercontent.com/56019032/71424071-924db880-268e-11ea-99ed-b7fd2f33d253.png)
 
 
-![](giph.gif)
+![](https://giphy.com/gifs/QA22lYML8RdvoaVSj8/html5)
 
 
 
