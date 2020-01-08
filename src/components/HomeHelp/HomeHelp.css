@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+div.home_help h1 {
+  padding-top: 0.2rem; }
 div.home_help div.three_boxes {
   display: flex;
   justify-content: center;
   align-items: center; }
   div.home_help div.three_boxes div {
     width: 10%;
-    padding: 2rem;
     margin: 3rem;
     font-family: "Open Sans", sans-serif; }
 div.home_help p {
@@ -21,13 +22,13 @@ div.home_help ul#page-numbers {
   font-family: "Open Sans", sans-serif;
   padding: 1rem; }
   div.home_help ul#page-numbers li {
-    color: blue;
+    color: black;
     user-select: none;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
-    border: 1px solid black;
     padding: 1rem;
-    margin: 1rem; }
+    margin: 1rem;
+    text-decoration: none; }
 
 div.foundation {
   display: flex;

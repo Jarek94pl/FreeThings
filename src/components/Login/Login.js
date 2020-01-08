@@ -55,7 +55,7 @@ class Login extends Component{
                             <p>Email<br/></p>
                             <input/>
                             <p>Hasło</p>
-                            <input/>
+                            <input type={"password"}/>
                     </div>
                 </section>
                 <div className="options">

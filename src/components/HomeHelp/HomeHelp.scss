@@ -2,13 +2,15 @@
 @import "../../scss/settings/fonts";
 
 div.home_help {
+  h1{
+    padding-top: 0.2rem;
+  }
   div.three_boxes{
     display: flex;
     justify-content: center;
     align-items: center;
     div{
       width: 10%;
-      padding: 2rem;
       margin: 3rem;
       //border: 1px solid black;
       font-family: $font-base;
@@ -27,13 +29,14 @@ div.home_help {
     font-family: $font-base;
     padding: 1rem;
     li {
-      color: blue;
+      color: black;
       user-select: none;
       cursor: pointer;
       font-family: $font-base;
-      border: 1px solid black;
+      //border: 1px solid black;
       padding: 1rem;
       margin: 1rem;
+      text-decoration: none;
     }
   }
 }
@@ -42,6 +45,7 @@ div.foundation{
   width: 70%;
   padding-left: 15rem;
   justify-content: center;
+  //background-color: green;
   div.foundation__name{
     width: 70%;
     float: left;
