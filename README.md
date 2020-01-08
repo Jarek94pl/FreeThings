@@ -5,6 +5,7 @@
 ### I used technologies such as:
 ### - [x] React with Routing anf Links
 ### - [x] Sass
+### - [x] In future firebase etc.
 
 
 
