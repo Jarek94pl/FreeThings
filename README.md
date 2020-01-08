@@ -1,4 +1,5 @@
-# Oddam w dobre ręce
+# "Oddam w dobre ręce"
+## Project of website to share useless clothes etc. with needy people.
 
 
 ### I used technologies such as:
