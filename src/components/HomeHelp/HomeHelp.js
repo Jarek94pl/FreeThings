@@ -17,7 +17,7 @@ class FoundationOne extends Component{
                         <p>ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
                     </div>
                 </div>
-                <div className="line"></div>
+                <div className="line"> </div>
             </>
         )
     }
@@ -36,7 +36,7 @@ class FoundationTwo extends Component{
                         <p>ubrania, meble, zabawki</p>
                     </div>
                 </div>
-                <div className="line"></div>
+                <div className="line"> </div>
             </>
         )
     }
@@ -55,7 +55,7 @@ class FoundationThree extends Component{
                         <p>ubrania, jedzenie, ciepłe koce</p>
                     </div>
                 </div>
-                <div className="line"></div>
+                <div className="line"> </div>
             </>
         )
     }
@@ -75,7 +75,7 @@ class FoundationFour extends Component{
 
                     </div>
                 </div>
-                <div className="line"></div>
+                <div className="line"> </div>
             </>
         )
     }
@@ -113,7 +113,7 @@ class FoundationSix extends Component{
                         <p>ubrania, meble, zabawki</p>
                     </div>
                 </div>
-                <div className="line"></div>
+                <div className="line"> </div>
             </>
         )
     }
@@ -133,7 +133,7 @@ class FoundationSeven extends Component{
 
                     </div>
                 </div>
-                <div className="line"></div>
+                <div className="line"> </div>
             </>
         )
     }
@@ -171,7 +171,7 @@ class HomeHelp extends Component {
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(todos.length / todosPerPage); i++) {
             pageNumbers.push(i);
-        };
+        }
 
         const renderPageNumbers = pageNumbers.map(number => {
             return (
@@ -195,6 +195,7 @@ class HomeHelp extends Component {
                     <div>Organizacjom pozarządowym</div>
                     <div>Lokalnym zbiórkom</div>
                 </div>
+
                 <p>W naszej bazie znajdziesz listę zweryfikowanych fundacji, z <br/> którymi współpracujemy.
                     Możesz sprawdzić, czym się zajmują, <br/>   komu pomagają i czego potrzebują.</p>
                 <ul>

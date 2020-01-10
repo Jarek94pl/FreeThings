@@ -12,7 +12,6 @@ div.home_help {
     div{
       width: 10%;
       margin: 3rem;
-      //border: 1px solid black;
       font-family: $font-base;
     }
   }
@@ -33,7 +32,6 @@ div.home_help {
       user-select: none;
       cursor: pointer;
       font-family: $font-base;
-      //border: 1px solid black;
       padding: 1rem;
       margin: 1rem;
       text-decoration: none;
@@ -45,7 +43,6 @@ div.foundation{
   width: 70%;
   padding-left: 15rem;
   justify-content: center;
-  //background-color: green;
   div.foundation__name{
     width: 70%;
     float: left;
