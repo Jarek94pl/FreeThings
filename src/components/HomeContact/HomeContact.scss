@@ -11,8 +11,6 @@ section.home_contact{
   background-size: 100%;
   button {
     margin-left: 22rem;
-
-
   }
   div.contact{
     padding:  0 2rem;
@@ -36,6 +34,7 @@ section.home_contact{
           padding-top: 1rem;
           border: none;
           border-bottom: 2px solid grey;
+          background-color: snow;
 
         }
       }
@@ -54,7 +53,15 @@ section.home_contact{
       textarea{
         border: none;
         border-bottom: 1px solid grey;
+        background-color: snow;
       }
+    }
+    input.submit{
+      background-color: snow;
+      border: 1px solid grey;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 1rem;
     }
   }
 }

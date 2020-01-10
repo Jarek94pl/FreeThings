@@ -158,7 +158,6 @@ class HomeHelp extends Component {
     render() {
         const { todos, currentPage, todosPerPage } = this.state;
 
-        // Logic for displaying todos
         const indexOfLastTodo = currentPage * todosPerPage;
         const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
         const currentTodos = todos.slice(indexOfFirstTodo, indexOfLastTodo);
@@ -167,7 +166,6 @@ class HomeHelp extends Component {
             return <li key={index}>{todo}</li>;
         });
 
-        // Logic for displaying page numbers
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(todos.length / todosPerPage); i++) {
             pageNumbers.push(i);

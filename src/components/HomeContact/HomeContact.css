@@ -30,7 +30,8 @@ section.home_contact {
         section.home_contact div.contact form div input {
           padding-top: 1rem;
           border: none;
-          border-bottom: 2px solid grey; }
+          border-bottom: 2px solid grey;
+          background-color: snow; }
     section.home_contact div.contact div.text_area {
       display: flex;
       flex-direction: column;
@@ -43,7 +44,14 @@ section.home_contact {
         padding-right: 11rem; }
       section.home_contact div.contact div.text_area textarea {
         border: none;
-        border-bottom: 1px solid grey; }
+        border-bottom: 1px solid grey;
+        background-color: snow; }
+    section.home_contact div.contact input.submit {
+      background-color: snow;
+      border: 1px solid grey;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 1rem; }
 
 footer P {
   display: flex;

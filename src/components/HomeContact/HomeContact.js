@@ -41,7 +41,7 @@ class HomeContact extends Component{
                                 eu pulvinar quam nunc sed leo. Fusce in gravida nulla, eget eleifend turpis Pellentesque consectetur, urna quis egestas aliquet, tortor eros pharetra justo,
                                 eu pulvinar quam nunc sed leo. Fusce in gravida nulla, eget eleifend turpis"> </textarea>
                     </div>
-                    <button type="submit">Wyślij</button>
+                    <input className="submit" type="submit" value="Wyślij" onChange={this.handleInput} />
                 </div>
             </section>
             <footer>
