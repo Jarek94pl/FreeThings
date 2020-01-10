@@ -18,6 +18,12 @@ class HomeContact extends Component{
             [e.target.name]: e.target.value
         });
     };
+
+    handleSubmit = e => {
+        e.preventDefault();
+        console.log(this.state.name);
+    };
+
     render(){
         return(
             <>
@@ -25,7 +31,7 @@ class HomeContact extends Component{
                 <div className= "contact">
                     <h1>Skontaktuj się z nami</h1>
                     <img src={deco} alt=""/>
-                    <form>
+                    <form onSubmit={this.handleSubmit}>
                         <div className="contact_name">
                             <label  htmlFor="name">Wpisz swoje imię</label>
                             <input id="name" type="text" name="name" value={this.state.name} onChange={this.handleInput} placeholder="Krzysztof"/>
@@ -41,7 +47,9 @@ class HomeContact extends Component{
                                 eu pulvinar quam nunc sed leo. Fusce in gravida nulla, eget eleifend turpis Pellentesque consectetur, urna quis egestas aliquet, tortor eros pharetra justo,
                                 eu pulvinar quam nunc sed leo. Fusce in gravida nulla, eget eleifend turpis"> </textarea>
                     </div>
-                    <input className="submit" type="submit" value="Wyślij" onChange={this.handleInput} />
+
+                    <input className="submit" type="submit" value="Wyślij"/>
+
                 </div>
             </section>
             <footer>

@@ -6,7 +6,25 @@ import deco from '../../assets/assets/Decoration.svg'; // with import
 
 
 class Login extends Component{
+    state = {
+        email: "",
+        password: ""
+    };
+
+    handleChange = e => {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    };
+
+    handleSubmit = e => {
+        e.preventDefault();
+        console.log(`Nazwa: ${this.state.email}`);
+        console.log(`Hasło: ${this.state.password}`);
+    };
+
     render(){
+        const {email, password} = this.state;
         return(
             <>
                 <div className= "accounts">
@@ -48,22 +66,29 @@ class Login extends Component{
                     </Link></li>
                 </ul>
                 <section>
+
+
                     <h1>Zaloguj się</h1>
                     <img src={deco} alt=""/>
-
                     <div className="form_inputs">
                             <p>Email<br/></p>
-                            <input type={"email"}/>
+                        <form onSubmit={this.handleSubmit}>
+                            <input type="email"
+                                   name="email"
+                                   value={email}
+                                   onChange={this.handleChange}/>
                             <p>Hasło</p>
-                            <input type={"password"}/>
+                            <input type="password"
+                                   name="password"
+                                   value={password}
+                                   onChange={this.handleChange}/>
+                            <input className="submit" type="submit" value="Zaloguj"/>
+                        </form>
                     </div>
                 </section>
                 <div className="options">
                 <div className= "registerAccount">
                     <NavLink to={"/rejestracja"}>Załóż konto</NavLink>
-                </div>
-                <div className= "loginAccount">
-                    <NavLink to={"/logowanie"}><p>Zaloguj</p></NavLink>
                 </div>
                 </div>
             </>

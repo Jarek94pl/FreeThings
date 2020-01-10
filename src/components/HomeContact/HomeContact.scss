@@ -36,6 +36,7 @@ section.home_contact{
           border-bottom: 2px solid grey;
           background-color: snow;
 
+
         }
       }
     }
@@ -62,10 +63,12 @@ section.home_contact{
       padding: 1rem;
       margin: 1rem;
       border-radius: 1rem;
+      margin-bottom: 5rem;
     }
   }
 }
 footer{
+  background-color: snow;
   P{
     display: flex;
     justify-content: center;

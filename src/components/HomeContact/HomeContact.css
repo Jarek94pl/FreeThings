@@ -51,16 +51,19 @@ section.home_contact {
       border: 1px solid grey;
       padding: 1rem;
       margin: 1rem;
-      border-radius: 1rem; }
+      border-radius: 1rem;
+      margin-bottom: 5rem; }
 
-footer P {
-  display: flex;
-  justify-content: center;
-  padding-left: 38rem;
-  font-family: "Open Sans", sans-serif; }
-  footer P i.face {
-    margin-left: 35rem; }
-  footer P i.insta {
-    padding-left: 2rem; }
+footer {
+  background-color: snow; }
+  footer P {
+    display: flex;
+    justify-content: center;
+    padding-left: 38rem;
+    font-family: "Open Sans", sans-serif; }
+    footer P i.face {
+      margin-left: 35rem; }
+    footer P i.insta {
+      padding-left: 2rem; }
 
 /*# sourceMappingURL=HomeContact.css.map */
