@@ -52,11 +52,11 @@ class Register extends Component{
 
                     <div className="form_inputs">
                         <p>Email<br/></p>
-                        <input/>
+                        <input type={"email"}/>
                         <p>Hasło</p>
-                        <input/>
+                        <input type={"password"}/>
                         <p className="password_repeat">Powtórz hasło</p>
-                        <input/>
+                        <input type={"password"}/>
                     </div>
                 </section>
                 <div className="options">
