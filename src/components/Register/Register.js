@@ -72,7 +72,7 @@ class Register extends Component{
                         <form onSubmit={this.handleSubmit}>
                             <input type="email"
                                    name="name"
-                                   value={name}
+                                   value={email}
                                    onChange={this.handleChange}/>
                             <p>Hasło</p>
                             <input type="password"
@@ -81,7 +81,7 @@ class Register extends Component{
                                    onChange={this.handleChange}/>
                             <p className="password_repeat">Powtórz hasło</p>
                             <input type="password"
-                                   name="password"
+                                   name="password2"
                                    value={password}
                                    onChange={this.handleChange}/>
                         </form>
