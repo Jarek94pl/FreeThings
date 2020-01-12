@@ -5,7 +5,24 @@ import {Link} from "react-scroll";
 import deco from "../../assets/assets/Decoration.svg";
 
 class Register extends Component{
+    state = {
+        email: "",
+        password: ""
+    };
+
+    handleChange = e => {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    };
+
+    handleSubmit = e => {
+        e.preventDefault();
+        console.log(`Nazwa: ${this.state.email}`);
+        console.log(`Hasło: ${this.state.password}`);
+    };
     render(){
+        const {email, password} = this.state;
         return(
             <>
                 <div className= "accounts">
@@ -52,11 +69,22 @@ class Register extends Component{
 
                     <div className="form_inputs">
                         <p>Email<br/></p>
-                        <input type={"email"}/>
-                        <p>Hasło</p>
-                        <input type={"password"}/>
-                        <p className="password_repeat">Powtórz hasło</p>
-                        <input type={"password"}/>
+                        <form onSubmit={this.handleSubmit}>
+                            <input type="email"
+                                   name="name"
+                                   value={name}
+                                   onChange={this.handleChange}/>
+                            <p>Hasło</p>
+                            <input type="password"
+                                   name="password"
+                                   value={password}
+                                   onChange={this.handleChange}/>
+                            <p className="password_repeat">Powtórz hasło</p>
+                            <input type="password"
+                                   name="password"
+                                   value={password}
+                                   onChange={this.handleChange}/>
+                        </form>
                     </div>
                 </section>
                 <div className="options">
