@@ -8,7 +8,8 @@ div.accounts {
   div.accounts div.loginAccount {
     padding: 0.5rem;
     margin: 0.5rem;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    border: 1px solid white; }
     div.accounts div.loginAccount a {
       text-decoration: none;
       font-family: "Open Sans", sans-serif;
@@ -77,5 +78,10 @@ div.options {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     color: #737373; }
+  div.options span {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: #737373;
+    border: 1px solid #FAD648; }
 
 /*# sourceMappingURL=Register.css.map */

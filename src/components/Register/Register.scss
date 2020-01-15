@@ -10,6 +10,7 @@ div.accounts{
     padding: 0.5rem;
     margin: 0.5rem;
     font-size: 0.8rem;
+    border: 1px solid white;
     a{
       text-decoration: none;
       font-family: $font-base;
@@ -93,5 +94,11 @@ div.options{
     text-decoration: none;
     font-family: $font-base;
     color: $greyColor;
+  }
+  span{
+    text-decoration: none;
+    font-family: $font-base;
+    color: $greyColor;
+    border: 1px solid $bgdColor;
   }
 }

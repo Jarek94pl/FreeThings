@@ -8,7 +8,8 @@ div.accounts {
   div.accounts div.loginAccount {
     padding: 0.5rem;
     margin: 0.5rem;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    border: 1px solid white; }
     div.accounts div.loginAccount a {
       text-decoration: none;
       font-family: "Open Sans", sans-serif;
@@ -16,7 +17,8 @@ div.accounts {
   div.accounts div.registerAccount {
     padding: 0.5rem;
     margin: 0.5rem;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    border: 1px solid white; }
     div.accounts div.registerAccount a {
       text-decoration: none;
       font-family: "Open Sans", sans-serif;
@@ -32,7 +34,8 @@ ul.homeMenu {
     font-family: "Open Sans", sans-serif;
     color: #3C3C3C;
     padding: 0.5rem;
-    margin: 0.5rem; }
+    margin: 0.5rem;
+    border: 1px solid white; }
     ul.homeMenu li a {
       text-decoration: none;
       font-family: "Open Sans", sans-serif;
@@ -68,6 +71,10 @@ div.options {
   display: flex;
   justify-content: space-evenly; }
   div.options a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: #737373; }
+  div.options span {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     color: #737373; }

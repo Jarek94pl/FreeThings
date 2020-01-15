@@ -7,8 +7,10 @@ import deco from '../../assets/assets/Decoration.svg'; // with import
 
 class Login extends Component{
     state = {
-        email: "",
-        password: ""
+        email: '',
+        password: '',
+        emailError: false,
+        passwordError: false,
     };
 
     handleChange = e => {
@@ -17,14 +19,39 @@ class Login extends Component{
         });
     };
 
-    handleSubmit = e => {
-        e.preventDefault();
-        console.log(`Nazwa: ${this.state.email}`);
-        console.log(`Hasło: ${this.state.password}`);
+    handleSubmit = () => {
+        const {email, password} = this.state;
+        let errorCounter = 0;
+
+        function validateEmail(em) {
+            let re = /\S+@\S+\.\S+/;
+            return re.test(em);
+        }
+
+        if (validateEmail(email) === false) {
+            this.setState({emailError: true});
+            errorCounter++
+        } else {
+            this.setState({emailError: false});
+        }
+
+        if (password.length < 6) {
+            this.setState({passwordError: true});
+            errorCounter++
+        } else {
+            this.setState({passwordError: false});
+        }
+
+        if (errorCounter === 0) {
+            console.log('jazda');
+            this.setState({
+                email: '',
+                password: ''
+            })
+        }
     };
 
     render(){
-        const {email, password} = this.state;
         return(
             <>
                 <div className= "accounts">
@@ -72,24 +99,31 @@ class Login extends Component{
                     <img src={deco} alt=""/>
                     <div className="form_inputs">
                             <p>Email<br/></p>
-                        <form onSubmit={this.handleSubmit}>
-                            <input type="email"
-                                   name="email"
-                                   value={email}
-                                   onChange={this.handleChange}/>
+                        <form>
+                            <input  style={{border: this.state.emailError ? '1px solid red' : null}}
+                                    type="text"
+                                    name='email'
+                                    onChange={this.handleChange}
+                                    value={this.state.email}
+                             />
+
                             <p>Hasło</p>
-                            <input type="password"
-                                   name="password"
-                                   value={password}
-                                   onChange={this.handleChange}/>
-                            <input className="submit" type="submit" value="Zaloguj"/>
+                            <input  style={{border: this.state.passwordError ? '1px solid red' : null}}
+                                    type="password"
+                                    name='password'
+                                    onChange={this.handleChange}
+                                    value={this.state.password}/>
+
                         </form>
                     </div>
                 </section>
                 <div className="options">
-                <div className= "registerAccount">
-                    <NavLink to={"/rejestracja"}>Załóż konto</NavLink>
-                </div>
+                    <div className= "registerAccount">
+                     <NavLink to={"/rejestracja"}>Załóż konto</NavLink>
+                    </div>
+                    <div className="loginAccount">
+                        <span onClick={this.handleSubmit}>Zaloguj</span>
+                    </div>
                 </div>
             </>
         )

@@ -7,7 +7,11 @@ import deco from "../../assets/assets/Decoration.svg";
 class Register extends Component{
     state = {
         email: "",
-        password: ""
+        password: "",
+        password2:'',
+        emailError: false,
+        passwordError: false,
+        password2Error: false
     };
 
     handleChange = e => {
@@ -16,13 +20,44 @@ class Register extends Component{
         });
     };
 
-    handleSubmit = e => {
-        e.preventDefault();
-        console.log(`Nazwa: ${this.state.email}`);
-        console.log(`Hasło: ${this.state.password}`);
+    handleSubmit = () => {
+        const {email, password, password2} = this.state;
+        let errorCounter = 0;
+
+        function validateEmail(em) {
+            let re = /\S+@\S+\.\S+/;
+            return re.test(em);
+        }
+
+        if (validateEmail(email) === false) {
+            this.setState({emailError: true});
+            errorCounter++;
+        } else {
+            this.setState({emailError: false});
+        }
+
+        if (password.length < 6) {
+            this.setState({passwordError: true});
+            errorCounter++;
+        } else {
+            this.setState({passwordError: false});
+        }
+
+        if (password !== password2) {
+            this.setState({password2Error: true});
+            errorCounter++;
+        } else {
+            this.setState({password2Error: false});
+        }
+        if (errorCounter === 0) {
+            console.log('jazda');
+            this.setState({
+                email: '',
+                password: ''
+            })
+        }
     };
     render(){
-        const {email, password} = this.state;
         return(
             <>
                 <div className= "accounts">
@@ -69,21 +104,24 @@ class Register extends Component{
 
                     <div className="form_inputs">
                         <p>Email<br/></p>
-                        <form onSubmit={this.handleSubmit}>
-                            <input type="email"
-                                   name="name"
-                                   value={email}
-                                   onChange={this.handleChange}/>
+                        <form >
+                            <input  style={{border: this.state.emailError ? '1px solid red' : null}}
+                                    type="text"
+                                    name='email'
+                                    onChange={this.handleChange}
+                                    value={this.state.email}/>
                             <p>Hasło</p>
-                            <input type="password"
-                                   name="password"
-                                   value={password}
-                                   onChange={this.handleChange}/>
+                            <input  style={{border: this.state.passwordError ? '1px solid red' : null}}
+                                    type="password"
+                                    name='password'
+                                    onChange={this.handleChange}
+                                    value={this.state.password}/>
                             <p className="password_repeat">Powtórz hasło</p>
-                            <input type="password"
-                                   name="password2"
-                                   value={password}
-                                   onChange={this.handleChange}/>
+                            <input  style={{border: this.state.password2Error ? '1px solid red' : null}}
+                                    type="password"
+                                    name='password2'
+                                    onChange={this.handleChange}
+                                    value={this.state.password2}/>
                         </form>
                     </div>
                 </section>
@@ -92,7 +130,7 @@ class Register extends Component{
                         <NavLink to={"/logowanie"}><p>Zaloguj</p></NavLink>
                     </div>
                     <div className= "registerAccount">
-                        <NavLink to={"/rejestracja"}>Załóż konto</NavLink>
+                        <span onClick={this.handleSubmit}>Załóż konto</span>
                     </div>
                 </div>
             </>
