@@ -16,11 +16,7 @@ class Navigation extends Component{
                     </div>
                 </div>
                 <ul className= "homeMenu">
-                    <li><NavLink to={"/"}  activeClass="active"
-                               //to="home"
-                               spy={true}
-                               smooth={true}
-                               duration={800} style={{textDecoration: "none", color:"#5E5322"}}>Start
+                    <li><NavLink to={"/"} style={{textDecoration:"none", color: "black"}}>Start
                     </NavLink></li>
                     <li><Link  activeClass="active"
                                to="home_four_step"

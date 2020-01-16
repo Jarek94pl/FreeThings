@@ -34,6 +34,7 @@ div.options {
   div.options span {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
-    color: #737373; }
+    color: #737373;
+    padding: 1rem; }
 
 /*# sourceMappingURL=Login.css.map */

@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import "./Logout.scss";
 import {NavLink} from "react-router-dom";
-import {Link} from "react-scroll";
 import deco from '../../assets/assets/Decoration.svg';
 import Navigation from "../Navigation/Navigation"; // with import
 
